@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIBE RETAILING| Login</title>
+    <style>
+        /* Modern Reset */
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, sans-serif; }
+        
+        body {
+            background-color: #f9fafb;
+            background-image: url('black-friday-sales-sign-neon-light.jpg');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Elegant Card Container */
+        .login-card {
+            background: white;
+            padding: 48px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        /* Brand Icon */
+        .icon {
+            background: #2563eb;
+            color: white;
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 24px;
+        }
+
+        h2 { color: #111827; font-size: 24px; margin-bottom: 8px; font-weight: 700; }
+        .subtitle { color: #6b7280; font-size: 14px; margin-bottom: 32px; }
+
+        /* Form Fields */
+        .input-box { text-align: left; margin-bottom: 20px; }
+        label { display: block; font-size: 14px; font-weight: 500; color: #374151; margin-bottom: 6px; }
+        
+        input {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+            transition: 0.2s;
+        }
+
+        input:focus { border-color: #2563eb; ring: 2px #2563eb; }
+
+        /* Row for Remember/Forgot */
+        .flex-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+
+        .flex-row a { color: #2563eb; text-decoration: none; font-weight: 600; }
+
+        /* Primary Button */
+        .btn-sign-in {
+            width: 100%;
+            padding: 12px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .btn-sign-in:hover { background: #1d4ed8; }
+
+        /* Footer */
+        .footer { margin-top: 24px; font-size: 14px; color: #6b7280; }
+        .footer a { color: #2563eb; text-decoration: none; font-weight: 600; }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <div class="icon">🤝</div>
+        
+        <h2>Welcome Back</h2>
+        <p class="subtitle">Sign in to your Vibe retailing account</p>
+
+        <form>
+            <div class="input-box">
+                <label>Email address</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-box">
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="flex-row">
+                <label style="color: #6b7280; display: flex; align-items: center; gap: 6px;">
+                    <input type="checkbox"> Remember me
+                </label>
+                <a href="#">Forgot your password?</a>
+            </div>
+
+            <button type="submit" class="btn-sign-in">Sign in</button>
+        </form>
+
+        <p class="footer">
+            Don't have an account? <a href="#">Sign up</a>
+        </p>
+    </div>
+
+</body>
+</html>
